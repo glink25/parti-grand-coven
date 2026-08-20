@@ -1,0 +1,10 @@
+import { readFile, stat } from 'node:fs/promises';
+const pkg=JSON.parse(await readFile('package.json','utf8'));const man=JSON.parse(await readFile('dist/parti.room.json','utf8'));
+if(pkg.version!==man.version) throw new Error('version mismatch');
+const required=['parti.room.json',man.entry.ui,man.entry.worker,man.entry.client,man.entry.style,man.cover].filter(Boolean);for(const f of required) await stat('dist/'+f);
+const w=await readFile('dist/room.worker.js','utf8');
+if(/from\s+["']\.\//.test(w)) throw new Error('worker contains relative import');
+if(!w.includes("from \"@parti/worker-sdk\"")&&!w.includes("from '@parti/worker-sdk'")) throw new Error('worker SDK import missing');
+if(!/export default /.test(w)) throw new Error('canonical default export missing');
+const html=await readFile('dist/index.html','utf8');if(!html.includes('./client.js')||!html.includes('./style.css')) throw new Error('entry assets missing');
+console.log('package contract OK');

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Grand Coven</title>
+  <desc id="desc">A moonlit magical coven emblem with eight role sigils around a glowing ritual circle.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0" stop-color="#4b2f69"/><stop offset="0.52" stop-color="#1c1328"/><stop offset="1" stop-color="#09070d"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#f0ddff" stop-opacity=".95"/><stop offset=".38" stop-color="#c694ff" stop-opacity=".65"/><stop offset="1" stop-color="#7b4ca3" stop-opacity=".06"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity=".12" stroke="#eadcff"><path d="M0 105h1200M0 210h1200M0 315h1200M0 420h1200M0 525h1200"/><path d="M150 0v630M300 0v630M450 0v630M600 0v630M750 0v630M900 0v630M1050 0v630"/></g>
+  <circle cx="600" cy="294" r="205" fill="url(#orb)"/>
+  <circle cx="600" cy="294" r="170" fill="none" stroke="#d9b7ff" stroke-width="3" opacity=".72" filter="url(#glow)"/>
+  <circle cx="600" cy="294" r="124" fill="#130e1d" stroke="#a873d6" stroke-width="2"/>
+  <path d="M600 154l24 90 86-40-60 72 86 40-94 5 40 86-82-50-82 50 40-86-94-5 86-40-60-72 86 40z" fill="none" stroke="#eadcff" stroke-width="3" opacity=".7"/>
+  <g fill="#f6edff" font-family="system-ui, sans-serif" font-size="38" text-anchor="middle">
+    <text x="600" y="103">🌿</text><text x="786" y="180">💎</text><text x="860" y="320">🔮</text><text x="785" y="458">🪙</text><text x="600" y="515">⚗️</text><text x="415" y="458">👁️</text><text x="340" y="320">🕯️</text><text x="414" y="180">🗝️</text>
+  </g>
+  <text x="600" y="288" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="62" font-weight="700" letter-spacing="6">GRAND</text>
+  <text x="600" y="352" text-anchor="middle" fill="#d9b7ff" font-family="Georgia, serif" font-size="62" font-weight="700" letter-spacing="9">COVEN</text>
+  <text x="600" y="400" text-anchor="middle" fill="#d8c9e8" font-family="system-ui, sans-serif" font-size="22" letter-spacing="4">秘密选角 · 恩惠与主张 · 五轮秘社</text>
+  <g fill="#d9b7ff"><circle cx="88" cy="76" r="3"/><circle cx="1088" cy="98" r="3"/><circle cx="1040" cy="520" r="2"/><circle cx="150" cy="532" r="2"/><circle cx="968" cy="150" r="2"/><circle cx="260" cy="122" r="2"/></g>
+</svg>

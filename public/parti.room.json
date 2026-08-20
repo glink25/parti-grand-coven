@@ -1,0 +1,35 @@
+{
+  "partiVersion": "0.1.0",
+  "protocolVersion": 1,
+  "id": "grand-coven",
+  "name": "Grand Coven",
+  "version": "0.2.0",
+  "description": "秘密选择角色、观察桌面局势，在安全的恩惠与更强但可能被夺走的主张之间做出选择。 / Secretly choose roles, read the table, and choose between safe Favor and contested Claim.",
+  "tags": [
+    "board-game",
+    "party",
+    "bluffing",
+    "simultaneous-selection"
+  ],
+  "cover": "cover.svg",
+  "packageMode": "filesystem",
+  "entry": {
+    "ui": "index.html",
+    "worker": "room.worker.js",
+    "style": "style.css",
+    "client": "client.js"
+  },
+  "room": {
+    "minPlayers": 3,
+    "maxPlayers": 5,
+    "allowSpectators": true
+  },
+  "sync": {
+    "mode": "snapshot"
+  },
+  "permissions": {
+    "network": false,
+    "storage": "session"
+  },
+  "actions": {}
+}
