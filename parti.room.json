@@ -1,0 +1,28 @@
+{
+  "partiVersion": "0.1.0",
+  "protocolVersion": 1,
+  "id": "grand-coven",
+  "name": "Grand Coven",
+  "version": "0.1.0",
+  "description": "Secretly choose roles, read the table, and decide whether to take a safe favor or fight for a stronger claim.",
+  "tags": ["board-game", "party", "bluffing", "simultaneous-selection"],
+  "cover": "cover.jpg",
+  "packageMode": "filesystem",
+  "entry": {
+    "ui": "index.html",
+    "worker": "room.worker.js",
+    "style": "style.css",
+    "client": "client.js"
+  },
+  "room": {
+    "minPlayers": 3,
+    "maxPlayers": 5,
+    "allowSpectators": true
+  },
+  "sync": { "mode": "snapshot" },
+  "permissions": {
+    "network": false,
+    "storage": "session"
+  },
+  "actions": {}
+}
