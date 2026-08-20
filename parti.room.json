@@ -6,7 +6,6 @@
   "version": "0.1.0",
   "description": "Secretly choose roles, read the table, and decide whether to take a safe favor or fight for a stronger claim.",
   "tags": ["board-game", "party", "bluffing", "simultaneous-selection"],
-  "cover": "cover.jpg",
   "packageMode": "filesystem",
   "entry": {
     "ui": "index.html",
