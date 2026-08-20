@@ -1,0 +1,12 @@
+{
+  "name": "parti-grand-coven",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Grand Coven - an original simultaneous role-selection board game for Parti",
+  "scripts": {
+    "typecheck": "node --check room.worker.js && node --check client.js",
+    "test": "node --test tests/*.test.mjs",
+    "verify": "npm run typecheck && npm test"
+  }
+}
