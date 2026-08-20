@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Grand Coven</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="app" class="game-shell" aria-live="polite">
+    <header class="topbar">
+      <div class="brand"><span class="sigil">✦</span><div><b>Grand Coven</b><small id="phaseLabel">Gathering</small></div></div>
+      <button id="rulesBtn" class="round-btn" aria-label="How to play">?</button>
+    </header>
+    <main class="table">
+      <section id="players" class="players"></section>
+      <section class="center-stage">
+        <div id="roundBadge" class="round-badge">Round 0 / 5</div>
+        <div id="roleStage" class="role-stage"></div>
+        <div id="rituals" class="rituals"></div>
+        <div id="message" class="message">Waiting for players</div>
+      </section>
+    </main>
+    <section class="hand-zone">
+      <div id="privateHint" class="private-hint">Your hidden role hand will appear here.</div>
+      <div id="hand" class="hand"></div>
+      <div id="controls" class="controls"></div>
+    </section>
+  </div>
+  <dialog id="rulesDialog"><article><button id="closeRules" class="close">×</button><h2>How to Play</h2><p>Each round, secretly choose four of the eight roles. The lead player starts one of their remaining roles and chooses <b>Favor</b> for a safe immediate effect or <b>Claim</b> for the stronger action.</p><p>Going clockwise, every player who also chose that role must respond. A later Claim steals the main action. When the circle ends, only the final claimant gets the Claim effect.</p><p>After five rounds, score potion and ritual VP plus 1 VP per 3 coins. Ties go to the player with more herb + mana + crystal, then remain shared.</p><h3>Roles</h3><ul><li>🌿 Herbalist — herbs</li><li>💎 Miner — crystals</li><li>🔮 Channeler — mana</li><li>🪙 Merchant — coins</li><li>⚗️ Alchemist — potions</li><li>👁️ Seer — private role information</li><li>🕯️ Ritualist — public ritual progress</li><li>🗝️ Thief — coins</li></ul></article></dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="./client.js"></script>
+</body>
+</html>
